@@ -73,7 +73,10 @@
   $[ (a+b)^3 = binom(3,0)a^3 + binom(3,1)a^2b + binom(3,2)a b^2 + binom(3,3)b^3 ]$
   V $ZZ_3$ jsou koeficienty $binom(3,1)=3$ a $binom(3,2)=3$ rovny nule, takže smíšené členy zmizí.
 
-*(B) Problém 1.1.9 – Algoritmické hledání inverse*
+*(B) Problém 1.1.9 – Algoritmické hledání inverse* 
+
+#text(fill: red)[Tento příklad jsme nakonec přeskočili, ale je pěkný]
+
 *Zadání:* Nalezněte $12^(-1)$ v $ZZ_(17)$.
 *Postup:* Ukaž systematický postup pomocí opakovaného dělení se zbytkem (Euklidův algoritmus) a zpětného dosazování, jak je popsáno ve sbírce.
   + $17 = 1 dot 12 + 5 ==> 5 equiv -12 \pmod(17)$
