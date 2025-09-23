@@ -7,8 +7,10 @@
   title: "Podklady k cvičení LAG",
   summary: [
     // #prefix-chapter("sample-page.typ")[Hello, typst]
-    = Seznam Cvičení
-    == Cvičení 21.9
+    #prefix-chapter("index.typ")[Domů]
+
+ 
+    = Cvičení 21.9
     #prefix-chapter("cviko1.typ")[Příklady ze cvičení]
     #prefix-chapter("hw1.typ")[Zadání domácích úkolů]
   ]

@@ -9,7 +9,11 @@
 
     <!-- Custom HTML head -->
     <!-- Put your customized HTML <head> meta here. -->
-    <meta name="description" content="Úkoly ke cvičení 1">
+    <meta name="description" content="Cílem tohoto úkolu je procvičit si myšlenky z prvního cvičení a připravit se na geometrická témata, která nás čekají. Ukážeme si, jak se principy, které znáte z reálné geometrie, dají aplikovat i na “konečné světy” čísel. Možná vám některé úkoly nepůjdou, ale to nevadí - i snaha vám to částečně dá do hlavy ;)
+#Úkol 1: Geometrie nad konečným tělesemVytvořte “rovinu”, kde souřadnice bodů bereme z tělesa ℤ5&#x3D;{0,1,2,3,4}.
+1.Kolik bodů má celá tato rovina? (Krátce zdůvodněte).
+
+2.Najděte a vypište všechny body (𝑥">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff" />
 
@@ -150,7 +154,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Seznam Cvičení</li><li class="chapter-item expanded affix "><li class="part-title">Cvičení 21.9</li><li class="chapter-item expanded affix "><a href="/cviko1.html">Příklady ze cvičení</a></li><li class="chapter-item expanded affix "><a href="/hw1.html" class="active">Zadání domácích úkolů</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="/index.html">Domů</a></li><li class="chapter-item expanded affix "><li class="part-title">Cvičení 21.9</li><li class="chapter-item expanded affix "><a href="/cviko1.html">Příklady ze cvičení</a></li><li class="chapter-item expanded affix "><a href="/hw1.html" class="active">Zadání domácích úkolů</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -238,12 +242,10 @@
                     <main>
                         <script>
     let appContainer = document.currentScript && document.currentScript.parentElement;
-    window.typstBookJsLoaded.then(() => {
-       window.typstBookRenderHtmlPage("/hw1", appContainer);
+    window.typstRenderModuleReady.then((plugin) => {
+        window.typstBookRenderPage(plugin, "/hw1", appContainer);
     });
-</script><div class="typst-preload-content" style="display: none">
-<div></div>
-</div>
+</script>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

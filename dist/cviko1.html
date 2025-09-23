@@ -9,7 +9,12 @@
 
     <!-- Custom HTML head -->
     <!-- Put your customized HTML <head> meta here. -->
-    <meta name="description" content="Cvičení 1">
+    <meta name="description" content="#Definice tělesa a řešení lineární rovnice#Téma 1: Co je to těleso?Cíl: Formálně a přitom srozumitelně zavést nejdůležitější algebraickou strukturu, se kterou budeme v tomto kurzu pracovat.
+Postup na Tabuli:
+1.Intuitivní úvod: “V matematice rádi zkoumáme různé ‘světy’ čísel. Některé z nich jsou velmi ‘pěkné’ – můžeme v nich bez problémů sčítat, odčítat, násobit a dělit (kromě nuly). Takovýmto ideálním světům říkáme tělesa. Jsou to naše hlavní hřiště pro lineární algebru.”
+
+
+2.Formální definice: Těleso je mn">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff" />
 
@@ -150,7 +155,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Seznam Cvičení</li><li class="chapter-item expanded affix "><li class="part-title">Cvičení 21.9</li><li class="chapter-item expanded affix "><a href="/cviko1.html" class="active">Příklady ze cvičení</a></li><li class="chapter-item expanded affix "><a href="/hw1.html">Zadání domácích úkolů</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="/index.html">Domů</a></li><li class="chapter-item expanded affix "><li class="part-title">Cvičení 21.9</li><li class="chapter-item expanded affix "><a href="/cviko1.html" class="active">Příklady ze cvičení</a></li><li class="chapter-item expanded affix "><a href="/hw1.html">Zadání domácích úkolů</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -238,12 +243,10 @@
                     <main>
                         <script>
     let appContainer = document.currentScript && document.currentScript.parentElement;
-    window.typstBookJsLoaded.then(() => {
-       window.typstBookRenderHtmlPage("/cviko1", appContainer);
+    window.typstRenderModuleReady.then((plugin) => {
+        window.typstBookRenderPage(plugin, "/cviko1", appContainer);
     });
-</script><div class="typst-preload-content" style="display: none">
-<div></div>
-</div>
+</script>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
