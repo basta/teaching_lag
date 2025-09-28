@@ -238,7 +238,7 @@
     font: main-font,
     size: main-size,
     fill: main-color,
-    lang: "en",
+    lang: "cs",
   )
 
 

@@ -3,16 +3,25 @@
 
 #show: book
 
+#build-meta(
+  dest-dir: "docs",
+)
+
 #book-meta(
   title: "Podklady k cvičení LAG",
+  language: "cs",
   summary: [
     // #prefix-chapter("sample-page.typ")[Hello, typst]
     #prefix-chapter("index.typ")[Domů]
 
- 
     = Cvičení 21.9
-    #prefix-chapter("cviko1.typ")[Příklady ze cvičení]
-    #prefix-chapter("hw1.typ")[Zadání domácích úkolů]
+    - #chapter("cviko1.typ")[Příklady ze cvičení]
+    - #chapter("hw1.typ")[Zadání domácích úkolů]
+
+    = Cvičení 28.9
+    - #chapter("cviko2.typ")[Příklady ze cvičení]
+    - #chapter("hw2.typ")[Zadání domácích úkolů]
+
   ]
 )
 
