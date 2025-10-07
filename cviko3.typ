@@ -31,7 +31,7 @@ Na začátku se studentů zeptáme, co probírali na poslední přednášce. Cí
     má jediné řešení $a_1 = a_2 = dots = a_k = 0$. Intuitivně: žádný z vektorů nelze vyjádřit jako kombinaci ostatních. Každý přináší "nový, nezávislý směr".
   - Množina je *lineárně závislá (LZ)*, pokud není lineárně nezávislá. To znamená, že existuje alespoň jedno netriviální řešení (alespoň jeden skalár $a_i != 0$). Intuitivně: alespoň jeden vektor je "zbytečný", protože ho lze nakombinovat z ostatních.
 
-= Problém 1 – Práce se sumami (dle bodu 1 zadání)
+= Problém 1 – Práce se sumami
 
 *Zadání:*
 (a) Platí rovnost $sum_(i=1)^r (sum_(j=1)^s a_(i j)) = sum_(j=1)^s (sum_(i=1)^r a_(i j))$?
@@ -45,7 +45,7 @@ Na začátku se studentů zeptáme, co probírali na poslední přednášce. Cí
    $ sum_(i=1)^r ( sum_(j=1)^s a_i dot vec(v)_j ) = sum_(i=1)^r ( a_i dot sum_(j=1)^s vec(v)_j ) = ( sum_(i=1)^r a_i ) dot ( sum_(j=1)^s vec(v)_j ) $
    Zdůraznit, že jsme potřebovali *distributivitu*.
 
-= Problém 2 – Lineární nezávislost a role tělesa (dle bodu 2 zadání)
+= Problém 2 – Lineární nezávislost a role tělesa
 
 *Zadání:*
 (a) V $RR$ nad $RR$ najděte (i) jeden a (ii) dva LN vektory.
@@ -60,7 +60,7 @@ Na začátku se studentů zeptáme, co probírali na poslední přednášce. Cí
    (i) Stejně jako předtím, např. $vec(v)=1$.
    (ii) Vektory $vec(v)_1 = 1$ a $vec(v)_2 = sqrt(2)$. Rovnice $a dot 1 + b dot sqrt(2) = 0$ pro $a, b in QQ$ má jen triviální řešení $a=b=0$. Důkaz sporem (pokud $b != 0$, pak $sqrt(2) = -a/b$, což je spor, protože $sqrt(2)$ není racionální).
 
-= Problém 3 – Rozšíření lineárně nezávislé množiny (dle bodu 3(i) zadání)
+= Problém 3 – Rozšíření lineárně nezávislé množiny
 
 *Zadání:* Ať $M={vec(v)_1, vec(v)_2}$ je LN a $vec(w) in.not text("span")(M)$. Dokažte, že ${vec(v)_1, vec(v)_2, vec(w)}$ je LN.
 
@@ -71,7 +71,7 @@ Na začátku se studentů zeptáme, co probírali na poslední přednášce. Cí
    - Pokud $b = 0$, pak $a_1 vec(v)_1 + a_2 vec(v)_2 = vec(0)$. Z LN množiny $M$ plyne $a_1=a_2=0$. To je triviální řešení, což je spor s předpokladem netriviálního řešení.
    Jediné řešení je tedy triviální.
 
-= Problém 4 – Redukce lineárně závislé množiny (dle bodu 3(ii) zadání)
+= Problém 4 – Redukce lineárně závislé množiny
 
 *Zadání:* Ať $M={vec(v)_1, vec(v)_2, vec(v)_3}$ je LZ. Dokažte, že existuje $vec(w) in M$ tak, že $"span"(M) = "span"(M backslash {vec(w)})$.
 
