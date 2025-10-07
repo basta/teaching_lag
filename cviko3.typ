@@ -79,12 +79,3 @@ Na začátku se studentů zeptáme, co probírali na poslední přednášce. Cí
 1. *Od definice:* Z LZ plyne existence netriviální LK $a_1 vec(v)_1 + a_2 vec(v)_2 + a_3 vec(v)_3 = vec(0)$.
 2. *Vyjádření vektoru:* Pokud např. $a_3 != 0$, můžeme vyjádřit $vec(v)_3 = -a_1/a_3 dot vec(v)_1 - a_2/a_3 dot vec(v)_2$. Vektor $vec(v)_3$ je tedy "zbytečný".
 3. *Důkaz rovnosti obalů:* Ukažte obě inkluze. Jedna je zřejmá. Pro druhou ($subset.eq$) ukažte, že libovolnou LK všech tří vektorů lze přepsat jako LK jen prvních dvou dosazením za $vec(v)_3$.
-
-= Domácí úkol – Problém 3.3.1 (část 2)
-
-*Zadání:* Platí rovnost $"span"(M union N) = "span"(M) union "span"(N)$? Dokažte, nebo najděte protipříklad.
-
-*Návod pro studenty:*
-1. *Geometrická úvaha:* Je sjednocení dvou různých přímek v $RR^2$ opět přímka nebo rovina (tedy podprostor)?
-2. *Protipříklad:* Zvolte $L=RR^2, M = {mat(1;0)}, N = {mat(0;1)}$.
-3. *Důkaz nerovnosti:* Najděte vektor, který leží v levé straně (např. $mat(1;1)$), ale ne v pravé.
