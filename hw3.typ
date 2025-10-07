@@ -36,7 +36,7 @@ Své tvrzení dokažte, pokud platí. Pokud neplatí, najděte konkrétní proti
 
 ---
 
-== Problém 3 (Bonusový): Pravda, nebo lež?
+== Problém 3: Pravda, nebo lež?
 
 *Zadání:* Rozhodněte, zda jsou následující tvrzení pravdivá, nebo nepravdivá. Své rozhodnutí vždy zdůvodněte (stručným důkazem nebo konkrétním protipříkladem).
 
