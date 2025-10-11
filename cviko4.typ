@@ -35,7 +35,7 @@ Ukázat studentům, jak znalost dimenze prostoru radikálně zjednodušuje ově�
 == Postup Řešení na Tabuli:
 
 1.  *Úvodní otázka:* "Co víme o prostoru $RR^3$? Jaká je jeho dimenze a proč?"
-    - Očekávaná odpověď: $dim(RR^3)=3$. Důvod: kanonická báze $K_3 = (evec_1, evec_2, evec_3)$ má 3 prvky.
+    - Očekávaná odpověď: $dim(RR^3)=3$. Důvod: kanonická báze $K_3 = (evec()_1, evec()_2, evec()_3)$ má 3 prvky.
     - *Ponaučení:* Jakákoli jiná báze prostoru $RR^3$ musí mít také přesně 3 prvky.
 
 2.  *Řešení části (2): Seznam $B_2$*
@@ -57,10 +57,10 @@ Ukázat studentům, jak znalost dimenze prostoru radikálně zjednodušuje ově�
       $
       Z posledních dvou rovnic plyne $a_1=0$ a $a_2=0$. Dosazením do první dostaneme $a_3=0$. Řešení je pouze triviální, vektory jsou LN.
     - *Výpočet lineární nezávislost (elegantní):*
-        - Jsou $vvec_1 = vec(1,2,3)$ a $vvec_2 = vec(1,3,2)$ lineárně nezávislé? Ano, nejsou násobky.
-        - Leží $vvec_3 = vec(1,0,0)$ v jejich obalu? Tj. $vec(1, 0, 0) = alpha vec(1, 2, 3) + beta vec(1, 3, 2)$?
+        - Jsou $vvec()_1 = vec(1,2,3)$ a $vvec()_2 = vec(1,3,2)$ lineárně nezávislé? Ano, nejsou násobky.
+        - Leží $vvec()_3 = vec(1,0,0)$ v jejich obalu? Tj. $vec(1, 0, 0) = alpha vec(1, 2, 3) + beta vec(1, 3, 2)$?
         - Z rovnic $0 = 2alpha + 3beta$ a $0 = 3alpha + 2beta$ plyne $alpha=0, beta=0$. Dosazením do první rovnice souřadnic $1 = alpha + beta$ dostáváme $1=0$, což je spor.
-        - Vektor $vvec_3$ neleží ve $span(vvec_1, vvec_2)$.
+        - Vektor $vvec()_3$ neleží ve $span(vvec()_1, vvec()_2)$.
     - *Konečný Závěr:* $B_1$ je seznam 3 LN vektorů v prostoru dimenze 3, je to tedy báze.
 
 == Poznámky pro Vyučujícího:
@@ -70,12 +70,12 @@ Ukázat studentům, jak znalost dimenze prostoru radikálně zjednodušuje ově�
 = Problém 4.2.2 – Transformace báze
 
 == Zadání:
-Ať $(bvec_1, bvec_2, ... , bvec_n)$ je uspořádaná báze lineárního prostoru $L$ nad $FF$. Rozhodněte, pro která $n >= 2$ je seznam $B' = (bvec_1 + bvec_2, bvec_2 + bvec_3,..., bvec_n-1 + bvec_n, bvec_n + bvec_1)$ opět bází prostoru $L$.
+Ať $(bvec()_1, bvec()_2, ... , bvec()_n)$ je uspořádaná báze lineárního prostoru $L$ nad $FF$. Rozhodněte, pro která $n >= 2$ je seznam $B' = (bvec()_1 + bvec()_2, bvec()_2 + bvec()_3,..., bvec()_n-1 + bvec()_n, bvec()_n + bvec()_1)$ opět bází prostoru $L$.
 
 == Postup Řešení na Tabuli:
 1.  *Analýza problému:* Máme $n$ vektorů v prostoru dimenze $n$. Stačí ověřit LN.
-    $a_1(bvec_1 + bvec_2) + a_2(bvec_2 + bvec_3) + .. + a_n(bvec_n + bvec_1) = vec(0)$.
-    Přeskupením: $(a_n + a_1)bvec_1 + (a_1 + a_2)bvec_2 + .. + (a_(n-1) + a_n)bvec_n = vec(0)$.
+    $a_1(bvec()_1 + bvec()_2) + a_2(bvec()_2 + bvec()_3) + .. + a_n(bvec()_n + bvec()_1) = vec(0)$.
+    Přeskupením: $(a_n + a_1)bvec()_1 + (a_1 + a_2)bvec()_2 + .. + (a_(n-1) + a_n)bvec()_n = vec(0)$.
     Z LN původní báze dostáváme soustavu:
     $
     vec(
