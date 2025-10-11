@@ -26,6 +26,10 @@
     - #chapter("cviko3.typ")[Příklady ze cvičení]
     - #chapter("hw3.typ")[Zadání domácích úkolů]
 
+    = Cvičení 13.10
+    - #chapter("cviko4.typ")[Příklady ze cvičení]
+
+
 
   ]
 )
