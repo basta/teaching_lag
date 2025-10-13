@@ -137,3 +137,49 @@ Dnes jsme si ukázali, že dimenze je praktický nástroj.
 1.  *Znalost dimenze* šetří práci při ověřování báze.
 2.  *Věta o dimenzi spojení a průniku* umožňuje analyzovat vztahy mezi podprostory bez jejich explicitního výpočtu.
 3.  Připravili jsme půdu pro *Frobeniovu větu*: vektor leží v lineárním obalu právě tehdy, když jeho přidáním nezvětšíme dimenzi tohoto obalu. To bude brzy náš hlavní nástroj pro určení, zda má soustava lineárních rovnic řešení.
+
+= Další rozšiřující příklady
+
+== Příklad: Báze v prostoru polynomů
+
+=== Zadání:
+Je seznam $C = (1, x-1, (x-1)^2)$ bází prostoru polynomů stupně nejvýše 2, $RR_(<=2)[x]$?
+
+=== Cíl:
+Ukázat, že principy báze a dimenze fungují stejně i v prostorech, které nejsou $RR^n$.
+
+=== Postup:
+1.  *Dimenze:* Připomeneme, že $dim(RR_(<=2)[x]) = 3$. Standardní báze je $(1, x, x^2)$.
+2.  *Počet vektorů:* Seznam $C$ má 3 prvky, což je správný počet. Stačí ověřit lineární nezávislost.
+3.  *Lineární nezávislost:* Řešíme rovnici $a_1(1) + a_2(x-1) + a_3(x-1)^2 = 0$.
+    - Roznásobením a přeskupením dostaneme: $a_3 x^2 + (a_2 - 2a_3)x + (a_1 - a_2 + a_3) = 0$.
+    - Aby byl polynom nulový, musí být všechny jeho koeficienty nulové:
+      $
+
+        a_3 &= 0 \
+        a_2 - 2a_3 &= 0 \
+        a_1 - a_2 + a_3 &= 0
+
+      $
+    - Tato soustava má jediné řešení $a_1=a_2=a_3=0$. Polynomy jsou tedy lineárně nezávislé.
+4.  *Závěr:* Seznam $C$ je bází prostoru $RR_(<=2)[x]$.
+
+== Příklad: Mimoběžné roviny v $RR^4$
+
+=== Zadání:
+V prostoru $RR^4$ nalezněte dva podprostory (roviny) $V$ a $W$ takové, že $dim(V) = 2$, $dim(W) = 2$ a jejich průnik je pouze nulový vektor, tj. $V inter W = {vec(0)}$.
+
+=== Cíl:
+Konkrétně demonstrovat, že dvě roviny v $RR^4$ se mohou "minout" (protnout se jen v počátku).
+
+=== Postup:
+1.  *Strategie:* Chceme najít dvě báze, jejichž spojení bude generovat celý prostor $RR^4$. Tím pádem bude $dim(V union.big W) = 4$.
+2.  *Volba bází:* Zvolme co nejjednodušší vektory z kanonické báze.
+    - Nechť $V = span(evec()_1), evec()_2) = span(vec(1,0,0,0), vec(0,1,0,0))$. Toto je "rovina xy".
+    - Nechť $W = span(evec()_3, evec()_4) = span(vec(0,0,1,0), vec(0,0,0,1))$. Toto je "rovina zw".
+3.  *Ověření:*
+    - Je zřejmé, že $dim(V)=2$ a $dim(W)=2$.
+    - Spojení $V union.big W = span(evec()_1, evec()_2, evec()_3, evec()_4) = RR^4$, takže $dim(V union.big W) = 4$.
+4.  *Věta o dimenzi:*
+    $dim(V inter W) = dim(V) + dim(W) - dim(V union.big W) = 2 + 2 - 4 = 0$.
+5.  *Závěr:* Průnikem je pouze podprostor dimenze 0, tedy ${vec(0)}$. Našli jsme dvě roviny, které se protínají pouze v počátku.
