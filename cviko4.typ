@@ -95,26 +95,26 @@ Ať $(bvec()_1, bvec()_2, ... , bvec()_n)$ je uspořádaná báze lineárního p
 = Problém 4.2.4 a 4.3.1 – Věta o dimenzi spojení a průniku
 
 == Zadání (A):
-$V, W$ jsou podprostory $RR^5$, $dim(V) = 3, dim(W) = 3$. Co lze říci o $dim(V inter W)$ a $dim(V union.big W)$?
+$V, W$ jsou podprostory $RR^5$, $dim(V) = 3, dim(W) = 3$. Co lze říci o $dim(V inter W)$ a $dim(V or W)$?
 
 == Zadání (B):
 Ať $dim(L) = n$ a $V, W$ jsou podprostory $L$ takové, že $dim(V) + dim(W) > n$. Dokažte, že $dim(V inter W) >= 1$.
 
 == Postup Řešení na Tabuli:
-1.  *Zopakování věty:* $dim(V) + dim(W) = dim(V union.big W) + dim(V inter W)$.
+1.  *Zopakování věty:* $dim(V) + dim(W) = dim(V or W) + dim(V inter W)$.
 
 2.  *Řešení (A):*
-    - $3 + 3 = 6 = dim(V union.big W) + dim(V inter W)$.
-    - Omezení: $3 <= dim(V union.big W) <= 5$ a $0 <= dim(V inter W) <= 3$.
+    - $3 + 3 = 6 = dim(V or W) + dim(V inter W)$.
+    - Omezení: $3 <= dim(V or W) <= 5$ a $0 <= dim(V inter W) <= 3$.
     - Možnosti:
-        - $dim(V inter W) = 1 => dim(V union.big W) = 5$.
-        - $dim(V inter W) = 2 => dim(V union.big W) = 4$.
-        - $dim(V inter W) = 3 => dim(V union.big W) = 3$ (pak $V=W$).
+        - $dim(V inter W) = 1 => dim(V or W) = 5$.
+        - $dim(V inter W) = 2 => dim(V or W) = 4$.
+        - $dim(V inter W) = 3 => dim(V or W) = 3$ (pak $V=W$).
 
 3.  *Řešení (B):*
-    - $dim(V inter W) = dim(V) + dim(W) - dim(V union.big W)$.
-    - Víme, že $dim(V) + dim(W) > n$ a $dim(V union.big W) <= n$.
-    - $dim(V inter W) > n - dim(V union.big W) >= n - n = 0$.
+    - $dim(V inter W) = dim(V) + dim(W) - dim(V or W)$.
+    - Víme, že $dim(V) + dim(W) > n$ a $dim(V or W) <= n$.
+    - $dim(V inter W) > n - dim(V or W) >= n - n = 0$.
     - Jelikož $dim(V inter W)$ je celé číslo a je větší než 0, musí platit $dim(V inter W) >= 1$.
 
 == Poznámky pro Vyučujícího:
@@ -128,8 +128,8 @@ Dokažte ekvivalenci:
 (b) $dim(span(arrow(a)_1,..., arrow(a)_s)) = dim(span(arrow(a)_1,..., arrow(a)_s, bvec()))$.
 
 == Postup Řešení na Tabuli:
-1.  *Označení:* $W = span(arrow(a)_1,..., arrow(a)_s)$ a $V = span(bvec())$. Chceme dokázat $V subset.eq W <=> dim(W) = dim(W union.big V)$.
-2.  *Použití problému 4.3.3(2) ze sbírky:* Tam je dokázáno, že pro podprostory $V, W$ platí $V subset.eq W <=> dim(V union.big W) = dim(W)$.
+1.  *Označení:* $W = span(arrow(a)_1,..., arrow(a)_s)$ a $V = span(bvec())$. Chceme dokázat $V subset.eq W <=> dim(W) = dim(W or V)$.
+2.  *Použití problému 4.3.3(2) ze sbírky:* Tam je dokázáno, že pro podprostory $V, W$ platí $V subset.eq W <=> dim(V or W) = dim(W)$.
 3.  *Aplikace:* Tvrzení přímo plyne z této vlastnosti, kde za $V$ vezmeme přímku generovanou vektorem $bvec()$.
 
 == Shrnutí a Závěr:
@@ -173,13 +173,13 @@ V prostoru $RR^4$ nalezněte dva podprostory (roviny) $V$ a $W$ takové, že $di
 Konkrétně demonstrovat, že dvě roviny v $RR^4$ se mohou "minout" (protnout se jen v počátku).
 
 === Postup:
-1.  *Strategie:* Chceme najít dvě báze, jejichž spojení bude generovat celý prostor $RR^4$. Tím pádem bude $dim(V union.big W) = 4$.
+1.  *Strategie:* Chceme najít dvě báze, jejichž spojení bude generovat celý prostor $RR^4$. Tím pádem bude $dim(V or W) = 4$.
 2.  *Volba bází:* Zvolme co nejjednodušší vektory z kanonické báze.
     - Nechť $V = span(evec()_1), evec()_2) = span(vec(1,0,0,0), vec(0,1,0,0))$. Toto je "rovina xy".
     - Nechť $W = span(evec()_3, evec()_4) = span(vec(0,0,1,0), vec(0,0,0,1))$. Toto je "rovina zw".
 3.  *Ověření:*
     - Je zřejmé, že $dim(V)=2$ a $dim(W)=2$.
-    - Spojení $V union.big W = span(evec()_1, evec()_2, evec()_3, evec()_4) = RR^4$, takže $dim(V union.big W) = 4$.
+    - Spojení $V or W = span(evec()_1, evec()_2, evec()_3, evec()_4) = RR^4$, takže $dim(V or W) = 4$.
 4.  *Věta o dimenzi:*
-    $dim(V inter W) = dim(V) + dim(W) - dim(V union.big W) = 2 + 2 - 4 = 0$.
+    $dim(V inter W) = dim(V) + dim(W) - dim(V or W) = 2 + 2 - 4 = 0$.
 5.  *Závěr:* Průnikem je pouze podprostor dimenze 0, tedy ${vec(0)}$. Našli jsme dvě roviny, které se protínají pouze v počátku.

@@ -28,6 +28,8 @@
 
     = Cvičení 13.10
     - #chapter("cviko4.typ")[Příklady ze cvičení]
+    - #chapter("hw4.typ")[Zadání domácích úkolů]
+
 
 
 
