@@ -30,7 +30,9 @@
     - #chapter("cviko4.typ")[Příklady ze cvičení]
     - #chapter("hw4.typ")[Zadání domácích úkolů]
 
-
+    = Cvičení 20.10
+    - #chapter("cviko5.typ")[Příklady ze cvičení]
+    // - #chapter("hw4.typ")[Zadání domácích úkolů]
 
 
   ]
