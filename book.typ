@@ -32,6 +32,7 @@
 
     = Cvičení 20.10
     - #chapter("cviko5.typ")[Příklady ze cvičení]
+    - #chapter("hw5.typ")[Zadání domácích úkolů]
     // - #chapter("hw4.typ")[Zadání domácích úkolů]
 
 
